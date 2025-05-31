@@ -2,6 +2,7 @@ const headerTimeEl = document.querySelector(".header__time")
 const userActiveTimeEl = document.querySelector(".header__userInfo p:nth-child(2)")
 const contentEl = document.querySelector(".content")
 const inputEl = document.querySelector(".footer input")
+const showBoxUserInfoEl = document.querySelector(".userBoxInfo")
 const date = new Date()
 const RANDOMDATA = [
     "Hello",
@@ -84,4 +85,8 @@ function randomMessageOnclick() {
     messageTime.className = "content__messageTime"
     messageTime.innerHTML = messageTimeBox
     messageDiv.appendChild(messageTime)
+}
+
+const showBoxUserClick = function () {
+    showBoxUserInfoEl.classList.toggle("userBoxShow")
 }
